@@ -8,21 +8,28 @@ Thonny IDE:
 
 https://www.youtube.com/watch?v=lWaCl0WjNZI
 
+* Helps new users to set up the IDE.
+* Covers slightly more advanced functions that can be still picked up by new users
+
 https://www.youtube.com/watch?v=Z0AV6LhShHs
+
+* Covers the most basic functions for new users to ensure easier familiarity with the program
+* Very simplified for new users and allows them to be given a walk through as they do the program in the video together with the author. 
 
 # Space Invaders Project on BBC: Microbit
 
-from microbit import *
-import random
-
-spaceship_x = 2
-alien_x = random.randint(0,4)
-alien_y = 0
-missle = (spaceship_x,spaceship_x + 1)
-random.seed()
+    from microbit import *
+    import random
 
 
-while True:
+    alien_x = random.randint(0,4)
+    alien_y = 0
+    missle = (spaceship_x,spaceship_x + 1)
+    spaceship_x = 2
+    random.seed()
+
+    while True:
+    
     display.clear()
     display.set_pixel(spaceship_x, 4, 9)
     display.set_pixel(alien_x, alien_y, 9)
@@ -52,4 +59,8 @@ while True:
         
     sleep(500)
     
-display.scroll("GAME OVER!", loop=True)
+    display.scroll("GAME OVER!", loop=True)
+
+- What were your problems and how did you remedy them (give at least 2)
+* I had encountered issues regarding the coding of the alien which 
+- What were your obstacles ?
